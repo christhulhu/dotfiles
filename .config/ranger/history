@@ -1,0 +1,50 @@
+rename idea.desktop
+rename GDrive.desktop
+rename GMail.desktop
+rename Google Calendar
+rename Google Calendar.desktop
+set show_hidden
+mkdir consolidated
+select_file *
+set colorscheme jungle
+set colorscheme snow
+set colorscheme solarized
+set colorscheme default
+set show_hidden=true
+search .theme
+mkdir Rechnungen
+rename Outlool.desktop
+rename Outlook.desktop
+rename Mattermost.desktop
+open_with kitty +kitten icat
+search jet
+setq
+q
+cd .local/share/fonts/
+mkdir css
+mkdir img
+mkdir js
+mkdir layouts
+mkdir partials
+d 
+rename footer.html
+rename
+rename ebm.386
+rename assets
+dele
+shell !
+cd /usr/local/share/
+cd /usr/share/icons/
+rename d
+open_with zathura
+wq
+rename config
+set show_hidden True
+set show_hidden true
+cd .config/
+cd .local/share/applications/
+cd /home/chris/.config/environment.d/
+cd .local/share/
+cd .config/i3/
+delete 
+

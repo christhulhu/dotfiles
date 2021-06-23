@@ -1,0 +1,11 @@
+/** Basic config file **/
+
+configuration {
+  modi: "window,drun,combi";
+  show-icons:         true;
+  icon-theme:         "Papirus";
+  font: "JetBrains Mono Medium Nerd Font Complete 11";
+}
+
+/** @import "/usr/share/rofi/themes/solarized.rasi" **/
+@import "custom.rasi"

@@ -1,0 +1,10 @@
+background-color=#5f8787
+text-color=#131313
+border-size=3
+border-color=#131313
+font="JetBrains Mono Medium Nerd Font Complete" 10
+padding=20
+default-timeout=5000
+ignore-timeout=0
+icons=1
+
