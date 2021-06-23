@@ -1,0 +1,9 @@
+/usr/bin/gnome-keyring-daemon --start &
+picom &
+xrandr --output DP-1-1 --primary --mode 1920x1080 --rate 60.00 --output eDP-1 --mode 1920x1080 --rate 59.93 --right-of DP-1-1 &
+tint2 &
+nitrogen --restore &
+plank &
+ulauncher --hide-window &
+#pnmixer &
+parcellite &
