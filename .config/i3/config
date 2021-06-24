@@ -23,6 +23,7 @@ bindsym $super+Return exec kitty
 
 # start program 
 bindsym $super+d exec rofi -show drun 
+bindsym $super+Shift+e exec rofimoji 
 bindsym $super+m exec kitty htop
 bindsym $super+f exec kitty ranger
 bindsym $super+Shift+s exec --no-startup-id $HOME/.config/i3/screenshot.sh 2> $HOME/screenshot.log
@@ -65,7 +66,7 @@ bindsym $super+Shift+space focus mode_toggle
 
 # switch to workspace
 bindsym $super+1 workspace 1
-bindsym $super+2 workspace 2
+bindsym $super+2 workspace 2; layout tabbed
 bindsym $super+3 workspace 3
 bindsym $super+4 workspace 4
 bindsym $super+5 workspace 5
@@ -113,7 +114,7 @@ mode "exit" {
 	bindsym Escape mode "default"
 }
 bindsym $super+Shift+q mode "exit"
-#bindsym $mod+Shift+e exec i3-nagbar -t warning -m 'Do you really want to exit i3?"' -b 'Yes, exit anyway' 'i3-msg exit'
+#bindsym $mod+Shift+e exec i3-nagbar -t warning -m 'Do you really want to exit i3?"' -b 'Yes, exit anyway' 'i3-msg exit' -b
 
 # panel
 bar {
@@ -143,3 +144,44 @@ client.unfocused            #2f343f #2f343f #d8dee8 #2f343f #2f343f
 client.urgent               #2f343f #2f343f #d8dee8 #2f343f #2f343f
 client.placeholder          #2f343f #2f343f #d8dee8 #2f343f #2f343f
 client.background           #2f343f
+
+
+workspace 1 output primary
+workspace 2 output primary
+workspace 3 output primary
+workspace 4 output primary
+workspace 5 output primary
+workspace 6 output primary
+workspace 7 output primary
+workspace 8 output primary
+workspace 9 output eDP-1
+workspace 10 output eDP-1
+
+# *** ***
+# Default Workspaces
+# *** ***
+
+# ***
+# My Apps
+# *** 
+#
+# GMail WM_CLASS(STRING) = "crx_kmhopmchchfpfdcdjodmpfaaphdclmlj", "Google-chrome"
+assign [instance="crx_kmhopmchchfpfdcdjodmpfaaphdclmlj"] 9
+# WhatsApp WM_CLASS(STRING) = "crx_hnpfjngllnobngcgfapefoaidbinmjnm", "Google-chrome"
+assign [instance="crx_hnpfjngllnobngcgfapefoaidbinmjnm"] 10
+# TickTick WM_CLASS(STRING) = "crx_ljpcdhpifcliplbeppoaejfnhiaaapee", "Google-chrome"
+assign [instance="crx_ljpcdhpifcliplbeppoaejfnhiaaapee"] 10
+
+# ***
+# Work-Apps
+# ***
+#
+# Outlook WM_CLASS(STRING) = "crx_pkooggnaalmfkidjmlhoelhdllpphaga", "Google-chrome"
+assign [instance="crx_pkooggnaalmfkidjmlhoelhdllpphaga"] 2
+# Mattermost WM_CLASS(STRING) = "crx_fcffmnpamdbfdonflcmlpiagmbmkbfec", "Google-chrome"
+assign [instance="crx_fcffmnpamdbfdonflcmlpiagmbmkbfec"] 1
+# Teams WM_CLASS(STRING) = "microsoft teams - preview", "Microsoft Teams - Preview"
+assign [instance="microsoft teams - preview"] 1
+# IntelliJ IDEA WM_CLASS(STRING) = "jetbrains-idea", "jetbrains-idea"
+assign [instance="jetbrains-idea"] 3
+
