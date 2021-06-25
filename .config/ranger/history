@@ -1,5 +1,3 @@
-rename idea.desktop
-rename GDrive.desktop
 rename GMail.desktop
 rename Google Calendar
 rename Google Calendar.desktop
@@ -48,3 +46,5 @@ cd .local/share/
 cd .config/i3/
 delete 
 
+searc
+cd XConnect/Documents/Prokom 2.0/
